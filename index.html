@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conscientização sobre o TEA - Autismo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f9f9;
+            color: #333333;
+            position: static;
+        }
+
+        header {
+            position: relative;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px #cccccc;
+            display: flex;
+            align-items: center;
+            padding: 20px 50px;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0077b6;
+            text-shadow: 1px 1px 2px #cccccc;
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #555555;
+            font-weight: 600;
+        }
+
+        nav ul li a:hover {
+            color: #0077b6;
+            text-shadow: 0 0 5px #0077b6;
+        }
+
+        .hero {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 80px 50px;
+            background-color: #e0f7fa;
+        }
+
+        .hero-content {
+            max-width: 50%;
+        }
+
+        .hero-content h1 {
+            font-size: 42px;
+            color: #023e8a;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #cccccc;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #2b2d42;
+        }
+
+        .btn-cta {
+            display: flex;
+            background-color: #0077b6;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px #cccccc;
+            font-weight: bold;
+        }
+
+        .btn-cta:hover {
+            background-color: #023e8a;
+            box-shadow: 0 6px 8px #999999;
+        }
+
+        .hero-image {
+            position: relative;
+            max-width: 45%;
+            margin-left: auto;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px #cccccc;
+        }
+
+        .section-info {
+            padding: 60px 50px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .section-info h2 {
+            font-size: 32px;
+            color: #023e8a;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 2px #cccccc;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 30%;
+            min-width: 280px;
+            box-shadow: 0 4px 8px #cccccc;
+            position: relative;
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 20px #0077b6;
+        }
+
+        .card h3 {
+            color: #0077b6;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #666666;
+            font-size: 15px;
+        }
+
+        .section-data {
+            padding: 60px 50px;
+            background-color: #f0f7f9;
+        }
+
+        .section-data h2 {
+            text-align: center;
+            color: #023e8a;
+            margin-bottom: 30px;
+        }
+
+        .table-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        table {
+            max-width: 100%;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px #cccccc;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0077b6;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f1f8fb;
+        }
+
+        .section-media {
+            padding: 60px 50px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .section-media h2 {
+            color: #023e8a;
+            margin-bottom: 30px;
+        }
+
+        .media-grid {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .media-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px #cccccc;
+        }
+
+        video {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #023e8a;
+            color: white;
+            padding: 40px 50px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-info p {
+            font-size: 14px;
+            color: #e0e0e0;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            margin-left: auto;
+        }
+
+        .footer-links a {
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: #80deea;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ConectaTEA</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">O que é o TEA</a></li>
+                <li><a href="#dados">Estatísticas</a></li>
+                <li><a href="#multimidia">Multimídia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Inclusão, Respeito e Empatia pelo Autismo</h1>
+            <p>O Transtorno do Espectro Autista (TEA) afeta a forma como a pessoa percebe o mundo e interage com os outros. Conhecer é o primeiro passo para aceitar e incluir.</p>
+            <a href="#sobre" class="btn-cta">Saiba Mais</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Crianças brincando juntas representando inclusão">
+        </div>
+    </section>
+
+    <section id="sobre" class="section-info">
+        <h2>Compreendendo o TEA</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>O que é o Espectro?</h3>
+                <p>O termo "espectro" reflete a ampla gama de sintomas, habilidades e níveis de comprometimento que cada indivíduo pode apresentar de maneira única.</p>
+            </div>
+            <div class="card">
+                <h3>Sinais Comuns</h3>
+                <p>Dificuldades na comunicação social, padrões de comportamento restritos ou repetitivos e sensibilidades sensoriais acentuadas.</p>
+            </div>
+            <div class="card">
+                <h3>Importância do Diagnóstico</h3>
+                <p>A intervenção precoce com equipes multidisciplinares (terapeutas ocupacionais, fonoaudiólogos e psicólogos) melhora significativamente a qualidade de vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="dados" class="section-data">
+        <h2>Dados Relevantes e Características</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Área Afetada</th>
+                    <th>Característica Observada</th>
+                    <th>Abordagem de Apoio</th>
+                </tr>
+                <tr>
+                    <td>Comunicação</td>
+                    <td>Atraso ou ausência de linguagem verbal / uso atípico de gestos.</td>
+                    <td>Fonoaudiologia e métodos de comunicação alternativa.</td>
+                </tr>
+                <tr>
+                    <td>Interação Social</td>
+                    <td>Dificuldade em manter contato visual ou compreender nuances sociais.</td>
+                    <td>Treinamento de habilidades sociais e terapia comportamental.</td>
+                </tr>
+                <tr>
+                    <td>Sensorial</td>
+                    <td>Hipersensibilidade ou hipossensibilidade a sons, luzes ou texturas.</td>
+                    <td>Integração sensorial e adaptação do ambiente.</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="multimidia" class="section-media">
+        <h2>Conteúdos de Apoio e Conscientização</h2>
+        <div class="media-grid">
+            <div class="media-box">
+                <p style="margin-bottom: 10px; font-weight: bold; color: #023e8a;">Vídeo Educativo Explicativo:</p>
+                <video width="320" height="180" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2026 ConectaTEA. Todos os direitos reservados.</p>
+            <p>Juntos por uma sociedade mais inclusiva e acolhedora.</p>
+        </div>
+        <ul class="footer-links">
+            <li><a href="#inicio">Voltar ao Topo</a></li>
+            <li><a href="#sobre">Política de Privacidade</a></li>
+            <li><a href="#dados">Termos de Uso</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
